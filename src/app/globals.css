@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* ── Dark mode (default) ── */
 :root {
   --bg: #080808;
   --surface: #111111;
@@ -7,10 +8,52 @@
   --border: rgba(255, 255, 255, 0.06);
   --border-hover: rgba(255, 255, 255, 0.12);
   --text: #f0ede8;
-  --text-muted: rgba(240, 237, 232, 0.45);
-  --text-subtle: rgba(240, 237, 232, 0.22);
+  --text-muted: rgba(240, 237, 232, 0.5);
+  --text-subtle: rgba(240, 237, 232, 0.25);
   --accent: #8b78f8;
   --accent-2: #2dd4bf;
+  --nav-bg: rgba(14, 14, 14, 0.75);
+  --nav-bg-scrolled: rgba(14, 14, 14, 0.92);
+  --nav-border: rgba(255, 255, 255, 0.08);
+  --nav-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* ── Light mode ── */
+html.light {
+  --bg: #f5f3ef;
+  --surface: #ffffff;
+  --surface-2: #ece9e3;
+  --border: rgba(0, 0, 0, 0.07);
+  --border-hover: rgba(0, 0, 0, 0.13);
+  --text: #17150f;
+  --text-muted: rgba(23, 21, 15, 0.55);
+  --text-subtle: rgba(23, 21, 15, 0.32);
+  --accent: #6c57f0;
+  --accent-2: #0d9e8a;
+  --nav-bg: rgba(248, 246, 242, 0.75);
+  --nav-bg-scrolled: rgba(248, 246, 242, 0.95);
+  --nav-border: rgba(0, 0, 0, 0.08);
+  --nav-shadow: 0 4px 24px rgba(0, 0, 0, 0.08), inset 0 -1px 0 rgba(0, 0, 0, 0.04);
+}
+
+/* ── System preference fallback (no JS) ── */
+@media (prefers-color-scheme: light) {
+  html:not(.dark):not(.light) {
+    --bg: #f5f3ef;
+    --surface: #ffffff;
+    --surface-2: #ece9e3;
+    --border: rgba(0, 0, 0, 0.07);
+    --border-hover: rgba(0, 0, 0, 0.13);
+    --text: #17150f;
+    --text-muted: rgba(23, 21, 15, 0.55);
+    --text-subtle: rgba(23, 21, 15, 0.32);
+    --accent: #6c57f0;
+    --accent-2: #0d9e8a;
+    --nav-bg: rgba(248, 246, 242, 0.75);
+    --nav-bg-scrolled: rgba(248, 246, 242, 0.95);
+    --nav-border: rgba(0, 0, 0, 0.08);
+    --nav-shadow: 0 4px 24px rgba(0, 0, 0, 0.08), inset 0 -1px 0 rgba(0, 0, 0, 0.04);
+  }
 }
 
 * {
@@ -29,6 +72,7 @@ body {
   font-family: "Plus Jakarta Sans", system-ui, sans-serif;
   overflow-x: hidden;
   min-height: 100dvh;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 ::selection {
@@ -38,4 +82,4 @@ body {
 
 ::-webkit-scrollbar { width: 3px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 2px; }
+::-webkit-scrollbar-thumb { background: rgba(128, 128, 128, 0.2); border-radius: 2px; }

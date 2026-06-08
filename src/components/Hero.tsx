@@ -54,7 +54,7 @@ export default function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative flex flex-col items-center justify-center min-h-[100dvh] px-4 overflow-hidden"
+      className="relative flex flex-col items-center min-h-[100dvh] px-4 overflow-hidden pt-28 pb-16 md:pt-36 md:pb-20"
     >
       {/* Background orbs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -89,7 +89,7 @@ export default function Hero() {
           className="absolute inset-0"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px)",
+              "linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px)",
             backgroundSize: "80px 80px",
             maskImage: "radial-gradient(ellipse 60% 60% at 50% 50%, black 30%, transparent 100%)",
           }}
@@ -98,7 +98,7 @@ export default function Hero() {
 
       <motion.div
         style={{ opacity: heroOpacity, y: heroY }}
-        className="relative z-10 flex flex-col items-center text-center max-w-5xl mx-auto w-full"
+        className="relative z-10 flex flex-col items-center text-center max-w-5xl mx-auto w-full flex-1 justify-center"
       >
         {/* Eyebrow */}
         <motion.div
@@ -251,7 +251,7 @@ export default function Hero() {
 
       {/* Scroll cue */}
       <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        className="hidden md:flex flex-col items-center gap-2 mt-auto pt-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 0.6 }}

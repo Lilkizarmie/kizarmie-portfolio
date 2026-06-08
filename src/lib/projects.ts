@@ -31,7 +31,7 @@ export const projects: Project[] = [
     accent: "#8b78f8",
     live: true,
     description:
-      "SmartHealth is a full-featured telemedicine platform built at Interswitch Group — enabling real-time video and audio consultations between doctors and patients across Nigeria. The system spans appointment scheduling, comprehensive medical records management, an embedded AI chatbot powered by a multi-agent Python service, and a self-hosted LiveKit telemedicine layer that replaced expensive third-party SDKs. Real-time doctor-patient chat runs on a Node.js / Socket.IO service backed by MySQL and Redis.",
+      "SmartHealth is a full-featured telemedicine platform built at Interswitch Group — enabling real-time video and audio consultations between doctors and patients across Nigeria. The system spans appointment scheduling, comprehensive medical records management, an embedded AI chatbot powered by a multi-agent Python service, real-time doctor-patient chat, and a self-hosted telemedicine layer that replaced expensive third-party SDKs.",
     impact: [
       "Made quality healthcare accessible to thousands of patients across Nigeria via a production telemedicine platform",
       "Built a multi-agent AI chatbot (Python — Guard → Classify → Specialist Agents) that lets patients book appointments, find doctors, and manage records through natural language, reusing existing SmartHealth APIs",
@@ -57,6 +57,7 @@ export const projects: Project[] = [
       "Building reliable real-time video/audio consultations across Nigeria's diverse network conditions, reducing infrastructure cost without sacrificing quality, and adding a conversational AI layer that operates safely on sensitive medical data.",
     solution:
       "Replaced Stream SDK with a self-hosted LiveKit service, cutting recurring costs while gaining full control over media routing. Built a Python multi-agent chatbot (Guard → Intent Router → Specialist Agents) that forwards the patient's existing auth token to SmartHealth APIs — no new backend endpoints required. Socket.IO with Redis pub/sub handles real-time chat with full MySQL persistence.",
+    appStore: "https://apps.apple.com/ng/app/smarthealth-mobile/id1673350680",
     playStore: "https://play.google.com/store/apps/details?id=com.telemed.eclat",
   },
   {
@@ -94,6 +95,7 @@ export const projects: Project[] = [
       "Nigerian students face two hard constraints: unreliable internet and affordable low-spec Android devices. Building an AI-powered study platform that works fully offline on budget hardware while still delivering a premium, gamified experience.",
     solution:
       "Built a full offline-first data layer with smart sync — question banks, adaptive plans, and progress all cached locally. Optimised rendering for low-spec devices, compressed AI responses for offline queuing, and designed the gamification loop to work entirely without connectivity.",
+    appStore: "https://apps.apple.com/ng/app/campusgenie/id6739751652",
     playStore: "https://play.google.com/store/apps/details?id=com.campusgenie.app",
   },
   {
@@ -120,6 +122,7 @@ export const projects: Project[] = [
       "Making financial tools feel approachable and trustworthy for users who've never used a digital banking product before, while integrating AI personalisation that doesn't feel gimmicky.",
     solution:
       "Built a clean, guided onboarding flow that surfaces financial insights progressively. The AI planner analyses transaction history to surface concrete weekly savings targets, framed in terms users actually understand — not generic advice.",
+    appStore: "https://apps.apple.com/ng/app/vant-bank-save-invest/id6464392721",
     playStore: "https://play.google.com/store/apps/details?id=com.vant.app",
   },
   {
@@ -241,6 +244,7 @@ export const projects: Project[] = [
       "Most luxury brand stores are web-only and priced in foreign currencies. Nigerian consumers face two blockers: no native app experience and no way to pay in local currency — without direct API partnerships with the brands.",
     solution:
       "Used WebView to embed brand storefronts while intercepting cart and checkout events to apply Naira conversion and route payment through a local gateway. Currency rates are fetched in real time so the displayed price is always accurate at checkout.",
+    appStore: "https://apps.apple.com/ng/app/konix/id6464203231",
     playStore: "https://play.google.com/store/apps/details?id=com.konix",
   },
   {
@@ -268,6 +272,8 @@ export const projects: Project[] = [
       "Rural Nigerian farmers have never interacted with digital map tools. The UX needed to be learnable in minutes by users with limited smartphone experience, working entirely offline on cheap Android devices, in outdoor sunlight.",
     solution:
       "Designed a tap-to-place boundary mapping interface that requires zero prior GIS knowledge. Offline-first with Realm means data persists and syncs intelligently when connectivity returns. High-contrast UI for outdoor visibility and large touch targets for field use with work gloves.",
+    appStore: "https://apps.apple.com/ng/app/farmsmarter/id6670790240",
+    playStore: "https://play.google.com/store/apps/details?id=com.farmsmarter.app",
   },
 ];
 

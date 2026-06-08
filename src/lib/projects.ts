@@ -177,6 +177,8 @@ export const projects: Project[] = [
       "Sickle Cell patients need a health tool they can actually reach during a pain crisis — when they're least capable of navigating complex UIs. Building emergency flows that are one tap away while keeping the broader app medically accurate and commercially sustainable.",
     solution:
       "Designed an emergency mode accessible from every screen in the app — one tap surfaces AI guidance, emergency contacts, and nearest hospitals. The AI assistant is trained on SCD-specific medical context so responses are relevant, not generic. Subscription gating keeps premium features protected without blocking critical emergency functions.",
+    appStore: "https://apps.apple.com/ng/app/konix/id6464203231",
+    playStore: "https://play.google.com/store/apps/details?id=com.geinny.com",
   },
   {
     slug: "theragist",

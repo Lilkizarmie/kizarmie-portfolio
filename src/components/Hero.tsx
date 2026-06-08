@@ -175,8 +175,9 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.32, 0.72, 0, 1], delay: 0.85 }}
         >
-          Product Engineer specialised in React Native. 4+ years shipping
-          live products in fintech, health, agritech, and edtech — all on the App Store.
+          Full-stack engineer. I build React Native products people actually use{" "}
+          <em>and</em> embed production AI agent systems inside existing SaaS platforms —
+          4+ years across fintech, health, agritech, and edtech.
         </motion.p>
 
         {/* CTA row */}

@@ -120,20 +120,22 @@ export default function About() {
             transition={{ duration: 0.7, ease: [0.32, 0.72, 0, 1], delay: 0.2 }}
           >
             <p>
-              I&apos;m <strong style={{ color: "var(--text)" }}>Jeffery Adolor</strong> — known as Kizarmie. A Product Engineer
-              specialised in React Native with 4+ years building digital infrastructure for
-              emerging markets across fintech, healthcare, agriculture, and education.
+              I&apos;m <strong style={{ color: "var(--text)" }}>Jeffery Adolor</strong> — known as Kizarmie. A full-stack engineer
+              who loves building mobile apps and structuring systems. 4+ years shipping production
+              software across fintech, healthcare, agriculture, and education in Africa.
             </p>
             <p>
-              Every app I&apos;ve shipped is live. I specialise in{" "}
-              <strong style={{ color: "var(--text)" }}>offline-first architectures</strong> — a rare, hard-won skill
-              for users in low-bandwidth environments — and{" "}
-              <strong style={{ color: "var(--text)" }}>production AI integration</strong> using OpenAI and Google
-              Gemini, not just demos.
+              On the mobile side I specialise in{" "}
+              <strong style={{ color: "var(--text)" }}>React Native</strong> and{" "}
+              <strong style={{ color: "var(--text)" }}>offline-first architectures</strong> — rare, hard-won on
+              low-bandwidth hardware. On the backend I write{" "}
+              <strong style={{ color: "var(--text)" }}>Node.js</strong> and handle the full API and auth layer myself.
             </p>
             <p>
-              I own the full product lifecycle: architecture, design systems, backend integration,
-              CI/CD, and App Store deployment.
+              My second discipline is{" "}
+              <strong style={{ color: "var(--text)" }}>embedded AI engineering</strong>: I build production
+              multi-agent systems that sit inside existing SaaS platforms and let users act on complex
+              data through natural language — not chatbots, not demos. Shipped in healthcare and fintech.
             </p>
           </motion.div>
 

@@ -10,38 +10,38 @@ const categories = [
     accent: "#8b78f8",
   },
   {
+    label: "Backend & APIs",
+    skills: ["Node.js", "Express", "REST APIs", "GraphQL", "JWT / OAuth", "Laravel"],
+    accent: "#f87171",
+  },
+  {
+    label: "AI Agents",
+    skills: ["OpenAI Agents SDK", "Claude API", "Google Gemini API", "Multi-agent orchestration", "Tool use / Function calling", "RAG pipelines"],
+    accent: "#f59e0b",
+  },
+  {
+    label: "State & Data",
+    skills: ["Redux Toolkit", "TanStack Query", "Realm", "SQLite", "AsyncStorage"],
+    accent: "#a3e635",
+  },
+  {
+    label: "Real-time & Payments",
+    skills: ["Stream Chat SDK", "Stream Video SDK", "WebSockets", "Stripe", "Paystack"],
+    accent: "#34d399",
+  },
+  {
+    label: "Auth & Security",
+    skills: ["Firebase Auth", "Biometrics (Face ID / Touch ID)", "JWT", "Role-based access"],
+    accent: "#e879f9",
+  },
+  {
     label: "Languages",
     skills: ["TypeScript", "JavaScript", "HTML5 / CSS3"],
     accent: "#2dd4bf",
   },
   {
-    label: "AI & ML",
-    skills: ["OpenAI API", "Google Gemini API"],
-    accent: "#f59e0b",
-  },
-  {
-    label: "State & Data",
-    skills: ["Redux Toolkit", "TanStack Query", "Context API"],
-    accent: "#a3e635",
-  },
-  {
-    label: "Backend & API",
-    skills: ["Node.js", "Laravel", "REST APIs", "GraphQL", "JWT", "Firebase"],
-    accent: "#f87171",
-  },
-  {
-    label: "Real-time & Payments",
-    skills: ["Stream Chat SDK", "Stream Video SDK", "Stripe", "Paystack"],
-    accent: "#34d399",
-  },
-  {
-    label: "Auth & Storage",
-    skills: ["Firebase Auth", "Biometrics (Face ID / Touch ID)", "Realm", "AsyncStorage", "SQLite"],
-    accent: "#e879f9",
-  },
-  {
-    label: "Maps & Infra",
-    skills: ["Google Maps SDK", "GPS Mapping", "GitHub Actions", "Mixpanel", "Sentry"],
+    label: "Infra & Observability",
+    skills: ["GitHub Actions", "Google Maps SDK", "Mixpanel", "Sentry", "LogRocket", "Firebase Analytics"],
     accent: "#60a5fa",
   },
 ];

@@ -11,13 +11,13 @@ const jakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Kizarmie — Product Engineer & React Native Specialist",
+  title: "Kizarmie — Full-Stack & AI Integration Engineer",
   description:
-    "Product Engineer with 4+ years shipping live mobile apps across fintech, healthcare, agritech, and education for users across Africa. React Native Specialist. Lagos, Nigeria.",
-  keywords: ["React Native", "Product Engineer", "Mobile Developer", "Lagos", "Nigeria", "Jeffery Adolor"],
+    "Full-stack engineer specialised in React Native mobile apps and embedded AI agent systems for vertical SaaS. 4+ years shipping live products in fintech, healthcare, and edtech across Africa. Lagos, Nigeria.",
+  keywords: ["React Native", "AI Integration Engineer", "Full-Stack Engineer", "Embedded AI", "Multi-agent", "Node.js", "Mobile Developer", "Lagos", "Nigeria", "Jeffery Adolor"],
   openGraph: {
-    title: "Kizarmie — Product Engineer & React Native Specialist",
-    description: "Building live mobile products for millions across Africa.",
+    title: "Kizarmie — Full-Stack & AI Integration Engineer",
+    description: "Building mobile products and AI agent layers for products used by millions across Africa.",
     type: "website",
   },
 };

@@ -42,15 +42,11 @@ export const projects: Project[] = [
     ],
     stack: [
       "React Native",
-      "Expo",
       "LiveKit (self-hosted)",
-      "Node.js",
       "Socket.IO",
       "Python multi-agent AI",
       "OpenAI Agents SDK",
-      "MySQL",
       "Redis",
-      "Firebase Auth",
       "Sentry",
     ],
     challenge:

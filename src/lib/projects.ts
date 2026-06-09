@@ -273,6 +273,44 @@ export const projects: Project[] = [
     appStore: "https://apps.apple.com/ng/app/farmsmarter/id6670790240",
     playStore: "https://play.google.com/store/apps/details?id=com.farmsmarter.app",
   },
+  {
+    slug: "gadgetify",
+    index: "09",
+    name: "Gadgetify",
+    tagline: "E-commerce platform with an embedded AI shopping assistant",
+    category: "E-Commerce · AI Agents · Multi-language",
+    year: "2024",
+    role: "Mobile & AI Engineer",
+    company: "Gadgetify",
+    accent: "#06b6d4",
+    live: true,
+    description:
+      "Gadgetify is a full-featured e-commerce platform for gadgets, built with Flutter and a Laravel backend. It ships a floating AI chat assistant — a production multi-agent system (Guard → Classify → Specialist Agents) deployed on RunPod serverless infrastructure — that lets users discover products, get recommendations, place orders, and check order status through natural language. Supports English, Arabic, and Bangla with full right-to-left layout.",
+    impact: [
+      "Built a production multi-agent AI chatbot (Python — Guard → Classification → Details / Order-taking / Recommendation / E-commerce agents) embedded directly in the Flutter app",
+      "Users can search products, get personalised recommendations, place orders, and check order status entirely through natural language chat",
+      "Deployed the AI service on RunPod serverless, with the agent forwarding the user's Sanctum bearer token to Laravel APIs — no new backend endpoints required",
+      "Implemented full e-commerce stack: product catalog, flash sales, cart, wishlist, checkout, coupon support, order tracking, returns, and invoice printing",
+      "Shipped multi-language support (English, Arabic, Bangla) with full RTL layout for Arabic users",
+      "Integrated Firebase push notifications, Analytics, Crashlytics, and Performance monitoring",
+    ],
+    stack: [
+      "Flutter",
+      "GetX",
+      "Laravel (backend)",
+      "Python multi-agent AI",
+      "RunPod serverless",
+      "Firebase",
+      "Dio / HTTP",
+      "Sanctum Auth",
+    ],
+    challenge:
+      "Building a shopping AI assistant that goes beyond product search — one that can actually take orders, check status, and handle returns through conversation, all on top of an existing Laravel API without rebuilding the backend.",
+    solution:
+      "Used the same Guard → Classify → Specialist Agents pattern as SmartHealth. Each specialist agent (Details, Order-taking, Recommendation, E-commerce) calls a specific slice of the Laravel API using the user's existing auth token. RunPod serverless keeps the AI inference cost-efficient at scale. The Flutter chatbot UI is a draggable floating widget so it never interrupts the browsing experience.",
+    appStore: "https://apps.apple.com/ng/app/gadgetify/id6739226478",
+    playStore: "https://play.google.com/store/apps/details?id=com.gadgetify.app",
+  },
 ];
 
 export function getProject(slug: string): Project | undefined {
